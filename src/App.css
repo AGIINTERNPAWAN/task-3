@@ -10,13 +10,19 @@
   width: 250px;
   margin: 20px;
 }
+
 .card-details {
   position: relative;
   left: 90px;
+  top: 10px;
   display: inline-block;
 }
 .panel {
-  height: 800px;
+  /* background-image: url('./assets/amazon.png'); */
+  position: relative;
+  top: -72px;
+  background-color: none;
+  background-size: auto;
 }
 .item {
   width: 100%;
@@ -75,13 +81,27 @@
 }
 .home-heading {
   text-align: center;
-  background-color: #ffb74d;
+  background-color: #e3f2fd;
   width: 100%;
   position: relative;
-  top: -30px;
-  height: 50px;
+  top: -17px;
+  height: 90px;
+  font-family: monospace;
+  color: #263238;
 }
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: 450px;
+  top: -75px;
+  background: none;
 
+}
+.main {
+  background-image: url('./assets/amazon.png');
+  background-size: cover;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -103,14 +123,7 @@
   color: #61dafb;
 }
 
-.search-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-  left: 450px;
-  top: -20px;
 
-}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -118,4 +131,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+.single-card{
+  background-color:#e3f2fd;
+  width: 650px;
+  height: 644px;
+  position: relative;
+  left: 400px;
+  border: 1px solid #00695c;
+  border-radius: 20px;
+}
+ .single-card li {
+  list-style-type: square;
+  text-align: justify;
+}
+.single-card img{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 170px;
+  border-radius: 15px 50px;
+}
+.single-card h1{
+  text-align: center;
+}
+.single-card button{
+  margin: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #4fc3f7;
+  border: none;
+}
+.card-body {
+  background-image: url('./assets/amazon.png');
+  background-size: cover;
 }

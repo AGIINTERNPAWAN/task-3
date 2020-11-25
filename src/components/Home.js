@@ -1,8 +1,8 @@
 import { Grid,Card, CardContent, Container, Typography, TextField } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
+import {Link} from 'react-router-dom';
 import React from 'react';
 import '../App.css';
-import Amazon from '../assets/amazon.png';
 import AWS1 from '../assets/aws-1.png';
 import AWS2 from '../assets/aws-2.png';
 import AWS3 from '../assets/aws-3.png';
@@ -17,18 +17,18 @@ import AWS11 from '../assets/aws-11.png';
 import AWS12 from '../assets/aws-12.png';
 
 const listOfServices = [
-  {"id": 1, "name": "Amazon EC2", "img": AWS1},
-  {"id": 2, "name": "Amazon Lambda", "img": AWS2},
-  {"id": 3, "name": "Amazon RDS", "img": AWS3},
-  {"id": 4, "name": "AWS IoT Core", "img": AWS4},
-  {"id": 5, "name": "Amazon Cognit0", "img": AWS5},
-  {"id": 6, "name": "Amazon Redshift", "img": AWS6},
-  {"id": 7, "name": "Elastic Load Balancing", "img": AWS7},
-  {"id": 8, "name": "Elastic Search Sevice", "img": AWS8},
-  {"id": 9, "name": "Amazon Simple Email Service", "img": AWS9},
-  {"id": 10, "name": "Amazon Simple Queue Service", "img": AWS10},
-  {"id": 11, "name": "Amazon API Gateway", "img": AWS11},
-  {"id": 12, "name": "Amazon Kinesis Data Analytics", "img": AWS12},
+  {"id": 1, "name": "Amazon EC2", "img": AWS1, "card": "card1"},
+  {"id": 2, "name": "Amazon Lambda", "img": AWS2, "card": "card2"},
+  {"id": 3, "name": "Amazon RDS", "img": AWS3, "card": "card3"},
+  {"id": 4, "name": "AWS IoT Core", "img": AWS4, "card": "card4"},
+  {"id": 5, "name": "Amazon Cognit0", "img": AWS5, "card": "card5"},
+  {"id": 6, "name": "Amazon Redshift", "img": AWS6,"card": "card6"},
+  {"id": 7, "name": "Elastic Load Balancing", "img": AWS7, "card": "card7"},
+  {"id": 8, "name": "Elastic Search Sevice", "img": AWS8, "card": "card8"},
+  {"id": 9, "name": "Amazon Simple Email Service", "img": AWS9, "card": "card9"},
+  {"id": 10, "name": "Amazon Simple Queue Service", "img": AWS10, "card": "card10"},
+  {"id": 11, "name": "Amazon API Gateway", "img": AWS11, "card": "card11"},
+  {"id": 12, "name": "Amazon Kinesis Data Analytics", "img": AWS12, "card": "card12"},
 ]
 
 function searching(items){
@@ -53,8 +53,7 @@ export default class LandingPage extends React.Component{
   render() {
     const {items, listOfServices} = this.state;
     return(
-      <React.Fragment>
-        <img src ={Amazon} className="img" alt="No Preview"/>
+      <div className="main" >
         <div className="home-heading">
           <h1>Our Web Services</h1>
         </div>
@@ -68,12 +67,14 @@ export default class LandingPage extends React.Component{
             <div key={service.id} className="card-details">
               <Container maxWidth='md'>
                 <Grid container spacing={3} >
+                <Link to={"/"+service.card} style={{ textDecoration: 'none' }}>
                   <Card className="card">
                     <CardContent>
                       <img src ={service.img} className="item" alt="No Preview"/>
                       <Typography className="item-title" variant="h5" color="textSecondary" component="p">{service.name}</Typography>
                     </CardContent>
                   </Card>
+                  </Link>
                 </Grid>
               </Container>
             </div>
@@ -81,7 +82,8 @@ export default class LandingPage extends React.Component{
             )
           }
         </div>
-      </React.Fragment>
+      </div>
+      
     )
   }
 }
