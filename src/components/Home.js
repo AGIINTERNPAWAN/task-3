@@ -1,4 +1,4 @@
-import { Grid,Card, CardContent, Container, makeStyles, Typography, TextField } from '@material-ui/core';
+import { Grid,Card, CardContent, Container, Typography, TextField } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import {Link} from 'react-router-dom';
 import React from 'react';
@@ -70,7 +70,7 @@ export default class LandingPage extends React.Component{
               <Container maxWidth='md'>
                 <Grid container spacing={3} >
                 <Link to={"/"+service.card} style={{ textDecoration: 'none' }}>
-                  <Card className="card">
+                  <Card className="card" style={{ borderRadius: "20px", backgroundColor: "#ffe0b2"}}>
                     <CardContent>
                       <img src ={service.img} className="item" alt="No Preview"/>
                       <Typography className="item-title" variant="h5" color="textSecondary" component="p">{service.name}</Typography>

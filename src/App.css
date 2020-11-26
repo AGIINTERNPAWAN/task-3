@@ -9,6 +9,8 @@
 .card {
   width: 250px;
   margin: 20px;
+  color: #000;
+  border-radius: 30px;
 }
 
 .card-details {
