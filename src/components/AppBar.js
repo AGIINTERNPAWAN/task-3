@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme)=> ({
 export default function AppNav() {
     const styling = useStyles();
     return (
-      <AppBar position="static">
+      <AppBar position="fixed">
           <Toolbar className={styling.toolbar} >
             <IconButton edge="start"  color="inherit" aria-label="menu" >
               <MenuIcon/>

@@ -27,6 +27,7 @@
 .item {
   width: 100%;
   height: auto;
+  border-radius: 15px;
 }
 .switch {
   text-align: center;
@@ -81,11 +82,12 @@
 }
 .home-heading {
   text-align: center;
-  background-color: #e3f2fd;
+  background-color: #ffe0b2;
   width: 100%;
+  padding: 10px;
   position: relative;
   top: -17px;
-  height: 90px;
+  height: 100px;
   font-family: monospace;
   color: #263238;
 }
@@ -101,6 +103,8 @@
 .main {
   background-image: url('./assets/bg.jpg');
   background-size: cover;
+  position: relative;
+  top: 76px;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -135,8 +139,9 @@
 .single-card{
   background-color:#e3f2fd;
   width: 650px;
-  height: 644px;
   position: relative;
+  height: 640px;
+  top: 15px;
   left: 400px;
   border: 1px solid #00695c;
   border-radius: 20px;
@@ -163,6 +168,9 @@
   border: none;
 }
 .card-body {
+  position: relative;
+  height: 674px;
   background-image: url('./assets/amazon.png');
   background-size: cover;
+
 }
