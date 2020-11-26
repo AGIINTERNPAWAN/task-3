@@ -137,7 +137,7 @@
   }
 }
 .single-card{
-  background-color:#e3f2fd;
+  background-color: #ede7f6;
   width: 650px;
   position: relative;
   height: 640px;
@@ -169,6 +169,7 @@
 }
 .card-body {
   position: relative;
+  top: 73px;
   height: 674px;
   background-image: url('./assets/amazon.png');
   background-size: cover;

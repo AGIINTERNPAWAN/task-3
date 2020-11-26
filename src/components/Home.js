@@ -1,4 +1,4 @@
-import { Grid,Card, CardContent, Container, Typography, TextField } from '@material-ui/core';
+import { Grid,Card, CardContent, Container, makeStyles, Typography, TextField } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import {Link} from 'react-router-dom';
 import React from 'react';
@@ -50,7 +50,9 @@ export default class LandingPage extends React.Component{
   searchFilter (e){
     this.setState({items:e.target.value})
   }
+  
   render() {
+    
     const {items, listOfServices} = this.state;
     return(
       <div className="main" >
