@@ -99,7 +99,7 @@
 
 }
 .main {
-  background-image: url('./assets/amazon.png');
+  background-image: url('./assets/bg.jpg');
   background-size: cover;
 }
 @media (prefers-reduced-motion: no-preference) {
