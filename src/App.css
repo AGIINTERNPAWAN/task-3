@@ -177,3 +177,14 @@
   background-size: cover;
 
 }
+.contact-page {
+  position: absolute;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 100%;
+  background-image: url('./assets/amazon.png');
+}
+.form-panel{
+  position: absolute;
+  margin-top: 500px;
+}

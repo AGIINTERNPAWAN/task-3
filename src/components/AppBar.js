@@ -39,6 +39,7 @@ export default function AppNav() {
             <div className="nav-links">
               <Link to="/" style={{ textDecoration: 'none' }}><Typography variant="h5" className={styling.home}>Amazon</Typography></Link>
               <Link to="/pricings" style={{ textDecoration: 'none' } }><Typography  className={styling.link}>Pricings</Typography></Link>
+              <Link to="/contact" style={{ textDecoration: 'none' }}><Typography className={styling.link}>Contact</Typography></Link>
               <Link to="/about" style={{ textDecoration: 'none' }}><Typography className={styling.link}>About Dev</Typography></Link>
             </div>
           </Toolbar>

@@ -7,7 +7,7 @@ export default function Card2() {
     <div className="card-body">
         <div className="single-card">
             <h1>Amazon Lambda</h1>
-            <img src={AWS2}/>
+            <img src={AWS2} alt="No Preview"/>
             <ul>
             <li>Eu dolor tempor ut commodo ut eiusmod sunt officia velit in veniam.</li>
             <li>Nostrud in excepteur nostrud ut ullamco.</li>

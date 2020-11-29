@@ -9,6 +9,7 @@ import Card3 from './components/Card3.js'
 import Card4 from './components/Card4.js'
 import Card5 from './components/Card5.js'
 import Pricings from './components/Pricing';
+import Contact from './components/contact';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <AppNav/>
       <Route path="/" exact component={Home}/>
       <Route path ="/pricings" component={Pricings}/>
+      <Route path ="/contact" component={Contact}/>
       <Route path ="/about" component={About}/>
       <Route path = "/card1" component={Card1}/>
       <Route path = "/card2" component={Card2}/>
@@ -23,6 +25,5 @@ export default function App() {
       <Route path = "/card4" component={Card4}/>
       <Route path = "/card5" component={Card5}/>
     </Router>
-    
   );
 }

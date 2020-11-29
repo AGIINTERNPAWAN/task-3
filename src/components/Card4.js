@@ -7,7 +7,7 @@ export default function Card1() {
     <div className="card-body">
         <div className="single-card">
             <h1>AWS IoT Core</h1>
-            <img src={AWS4}/>
+            <img src={AWS4} alt="No Preview"/>
             <ul>
             <li>Eu dolor tempor ut commodo ut eiusmod sunt officia velit in veniam.</li>
             <li>Nostrud in excepteur nostrud ut ullamco.</li>
