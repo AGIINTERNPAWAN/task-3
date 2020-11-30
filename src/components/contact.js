@@ -1,5 +1,6 @@
 import React, {Component} from 'react'; 
 import axios from 'axios';
+import Swal from 'sweetalert2'
 import { Grid, TextField, Button} from '@material-ui/core';
 import SideImage from '../assets/side.png';
 export default class Contact extends Component {
@@ -15,14 +16,26 @@ export default class Contact extends Component {
     handleChange = e=>{
         this.setState({[e.target.name]: e.target.value})
     }
+    
     handleSubmit = e =>{
         e.preventDefault();
         console.log(this.state);
         axios.post('http://localhost:2000/feedbacks',this.state).then(res => {
             console.log(res);
+            this.clean();
         })
         .catch(err =>{
             console.log(err);
+        });
+        Swal.fire({
+            icon: 'success',
+            title: 'Thank you for the feedback ;)',
+          });
+          this.setState({
+            name: '',
+            email: '',
+            subject: '',
+            description: '',
         });
     }
     render() {
