@@ -184,6 +184,13 @@
   min-width: 100%;
   background-image: url('./assets/contact.jpg');
 }
+.contact-page h1{
+  position: absolute;
+  top: 10%;
+  left: 58.5%;
+  font-size: 20px;
+  font-family: verdana;
+}
 .form-panel{
   position: absolute;
   margin-top: 500px;
